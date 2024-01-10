@@ -16,7 +16,7 @@ export default function News() {
   const fetchCryptos = async () => {
     try {
       const res = await axios.get(
-        'https://wonderful-entremet-da9a0d.netlify.app/crypto/news',
+        'https://cryptotrackrback.netlify.app//crypto/news',
       )
       setNews(res.data.results)
     } catch (error) {

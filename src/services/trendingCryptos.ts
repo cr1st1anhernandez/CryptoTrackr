@@ -4,7 +4,7 @@ import { ApiCrypto } from '../interfaces/interfaces'
 export const fetchCryptos = async (): Promise<ApiCrypto[]> => {
   try {
     const res = await axios.get(
-      'https://wonderful-entremet-da9a0d.netlify.app/crypto/trending',
+      'https://cryptotrackrback.netlify.app/crypto/trending',
     )
     const coins = res.data.coins as ApiCrypto[]
     return coins
